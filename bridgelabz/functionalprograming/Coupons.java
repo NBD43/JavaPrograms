@@ -50,13 +50,14 @@ public class Coupons {
 					else{
 						b=true;
 					}
+				}
 					
 					if(b=true) 
 					{
 						a[i]=Utility.newRandom(min,max);
 						
 					}
-				}
+				
 			}System.out.println(i+1+"noCoupon Numbers are:"+a[i]);
 		}
 	}

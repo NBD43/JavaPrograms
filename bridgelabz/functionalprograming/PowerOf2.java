@@ -45,8 +45,8 @@ public class PowerOf2 {
 
 	public static void main(String[] args) {
 		PowerOf2 pow=new PowerOf2();
-		System.out.println("enter the n value to print table 2 power N ");
-		int n=Utility.getInteger();
+		//enter the power of n
+		int n=Integer.parseInt(args[0]);
 		//calling function to print table
 		pow.getTable(n);
 		

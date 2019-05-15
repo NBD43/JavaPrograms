@@ -18,11 +18,12 @@ public class Distance {
 	 */
 
 	public static void main(String[] args) {
-		System.out.println("enter the X value");
-		int x=Utility.getInteger();
+		//enter the x value
+		int x=Integer.parseInt(args[0]);
 		
-		System.out.println("enter the y value");
-		int y=Utility.getInteger();
+		//enter the y value
+		int y=Integer.parseInt(args[1]);
+		
 		//logic for euclidean distance
 		double distance = Math.sqrt(x*x + y*y);
 

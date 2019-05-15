@@ -50,7 +50,7 @@ public class Triplet {
 	}
 		
 	
-	/**
+	 /*
 	  * The main function is written to test Triplet  class
 	  */
 	public static void main(String[] args) {
