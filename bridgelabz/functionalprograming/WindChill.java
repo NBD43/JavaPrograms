@@ -14,7 +14,7 @@ package com.bridgelabz.functionalprograming;
 
 public class WindChill {
 	/*
-	 * The main function is written to test Triplet  class
+	 * The main function is written to test WindChill  class
 	 */
 	public static void main(String[] args) {
 		//enter temperature command line in Fahrenheit
