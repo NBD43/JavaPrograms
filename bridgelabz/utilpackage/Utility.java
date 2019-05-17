@@ -1,11 +1,13 @@
 package com.bridgelabz.utilpackage;
 
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Utility {
 	public static Scanner sc=new Scanner(System.in);
+	public static long start;
 
 	
 
@@ -22,7 +24,7 @@ public class Utility {
 	
 		//to get String as a input from scanner 
 		public static String getString() {
-			return sc.nextLine();	
+			return sc.next();	
 		}
 		
 	
@@ -51,10 +53,57 @@ public class Utility {
 		    return r.nextInt((max - min) + 1) + min;
 		}
 		
+		
+		//Function is used to start stopwatch
+		 public static void getStart() {
+			 start=System.currentTimeMillis();
+			 //System.out.println("start"+start);
+		 }
+		 
+		// Function is used to stop and display elapse time
+		 public static void elapsedTime() {
+			 long stop=System.currentTimeMillis();
+			 //System.out.println("stop"+stop);
+			 double elapse=(stop-start)/1000.0;
+			System.out.println("elapse time: "+elapse);
+		 }
+		//to print integer array
+		 public static void printArray(int a[])
+		    {
+		        int leng = a.length;
+		        for (int i=0; i<leng; i++)
+		            System.out.print(a[i] + " ");
+		        System.out.println();
+		    }
+		 //to print String array
+		 public static void printArray(String a[])
+		    {
+		        int leng = a.length;
+		        for (int i=0; i<leng; i++)
+		            System.out.print(a[i] + " ");
+		        System.out.println();
+		    }
+		 //to stored the array in integer
+		 public static void storeArray(int arr[],int leng) {
+				for(int i=0;i<leng;i++) {
+					System.out.println("enter the "+i+"  elements:");
+					arr[i]=Utility.getInteger();
+				}
+				
+			}
+		 //to store array in String
+		  public static void storeArray(String arr[],int leng) {
+				for(int i=0;i<leng;i++) {
+					System.out.println("enter the "+i+"  elements:");
+					arr[i]=Utility.getString();
+				}
+				
+			}
+		
 //=======================Algorithm functions========================================		
 		
 		//Function to check number is palindrome or not
-		public static boolean checkPalindrome(int n) {
+		public static boolean checkPalindrome(Integer n) {
 			boolean b1;
 		     int sum = 0, r;
 			 int temp = n;    
@@ -181,6 +230,145 @@ public class Utility {
 				}
 				return pr;
 		}
+		
+		/**
+		 * 
+		 * @param i1: fist Integer
+		 * @param i2: Second Integer
+		 * @return: true or false for anagram
+		 */
+		public static boolean getAnagram(Integer i1,Integer i2) {
+			//converting Integer to String
+			String s1=i1.toString();
+			String s2=i2.toString();
+			//converting String to char Array
+			char[] str1=s1.toCharArray();
+			char[] str2=s2.toCharArray();
+			//
+			int n1=str1.length;
+			int n2=str2.length;
+			if(n1!=n2) {
+				return false;
+				
+			}
+			//char array to sort
+			Arrays.sort(str1);
+			Arrays.sort(str2);
+			
+			for(int i=0;i<n1;i++) {
+				if(str1[i]!=str2[i]) {
+					return false;
+				}
+			}
+			
+			return true;
+			
+		}
+		//binary Search method for a String
+		public static int binarySearch(String a[],String s) {
+			int leng=0;
+			int r=a.length;
+			while(leng<=r) {
+				int m=1+(r-1)/2;
+				
+				int res=s.compareTo(a[m]);
+				
+				if(res==0) {
+					return m;
+				}
+				
+				if(res>0) {
+					leng=m+1;
+				}
+				else {
+					r=m-1;
+				}
+			}
+			return -1;
+			
+		}
+		
+		//binary search for Integer
+		public static int binarySearch(int a[],int val,int low,int high) {
+			int index=Integer.MAX_VALUE;
+			while(low<=high) {
+				int mid=(low+high)/2;
+				if(a[mid] < val) {
+					low=mid+1;
+					
+				}else if(a[mid] > val) {
+					high=mid-1;
+				}else if(a[mid]==val) {
+					index=mid;
+					break;
+				}
+			}
+			return index;
+			
+		}
+		//to perform Integer bubble sort
+		public static void bubbleSort(int a[]) {
+			int leng=a.length;
+			for(int i=0;i<leng-1;i++) {
+				for(int j=0;j<leng-i-1;j++) {
+					if(a[j] > a[j+1]) {
+						int temp=a[j];
+						a[j]=a[j+1];
+						a[j+1]=temp;
+						
+					}
+				}
+				
+			}
+		}
+		//to perform String bubble sort
+		public static void bubbleSort(String[]a) {
+			int leng=a.length;
+			String temp;
+			for (int j=0;j<a.length;j++) {
+				for(int i=j+1;i<a.length;i++) {
+					if(a[i].compareTo(a[j])<0) {
+						temp= a[j];
+						a[j]=a[i];
+						a[i]= temp;
+					}
+				}
+				
+			}
+		}
+		
+		//to perform insertion sort on int array
+		public static void insertionSort(int a[]) {
+			int leng=a.length;
+			for(int i=0;i<leng;i++) {
+				int key=a[i];
+				int j=i-1;
+				while((j>-1) && (a[j]>key)){
+					a[j+1]=a[j];
+					j--;
+				}
+				a[j+1]=key;
+			}
+		}
+		//to perform insertion sort on String array
+		public static void insertionSort(Comparable a[]) {
+			Comparable temp;
+			for(int i=1;i<a.length;i++) {
+				temp=a[i];
+				int j=0;
+				
+				for(j=i;j>0;j--) {
+					if(temp.compareTo(a[j-1])<0) {
+						a[j]=a[j-1];
+					}else break;
+				}
+				a[j]=temp;
+			}
+		}
+		
+		
+		
+
 
 		
 

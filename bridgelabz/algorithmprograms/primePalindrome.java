@@ -4,7 +4,7 @@
  *  Purpose: To print prime number which is anagram and palindrom.
  *
  *  @author  Nilesh Dahiphale
- *  @version 1.0
+ *  @version 1.0(error)
  *  @since   16-05-2019
  *
  ******************************************************************************/
