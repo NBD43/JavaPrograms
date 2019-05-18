@@ -366,6 +366,59 @@ public class Utility {
 			}
 		}
 		
+		/**
+		 * Function to return the day of the week.
+		 * @param d:date
+		 * @param m:month
+		 * @param y:year
+		 * @return: the day of that date.
+		 */
+		public static int dayofweek(int d, int m, int y) {
+			
+			int y1=y-(14-m)/12;
+			int x=y1 + y1/4 -y1/100 + y1/400;
+			int m1=m+ 12*((14-m)/12)-2;
+			int day=(d+x+31*m1/12)%7;
+			
+			return day;
+		}
+		/**
+		 * Function to convert  Fahrenhit temperature in Celsius or viceversa
+		 * @param ch
+		 * @return
+		 */
+		public static double temperaturConversion(int ch) {
+			double far,cels;
+			switch (ch) {
+			case 1: System.out.println("Enter the temprature in Fahrenhit");
+				  far=Utility.getDouble();
+		    	  cels=(far-32)*5/9;
+		    	  return cels;
+			case 2: System.out.println("Enter the temprature in celsius");
+					cels=Utility.getDouble();
+					 far=((9*cels)/5)+32;
+				  return far;
+			default:System.out.println("enter the correct choice");
+				break;
+			}
+			
+			return 0;
+		}
+		
+		/**
+		 * Function to convert decimal to binary
+		 * @param num: decimal number
+		 * @return:binary number
+		 */
+		public static int toBinary(int num) {
+			if (num == 0)  
+	            return 0;   
+	        else
+	        	return (num % 2 + 10 *  
+	                toBinary(num / 2)); 
+		}
+
+		
 		
 		
 
