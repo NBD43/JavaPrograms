@@ -10,37 +10,40 @@
  ******************************************************************************/
 package com.bridgelabz.algorithmprograms;
 
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
+
 import com.bridgelabz.utilpackage.Utility;
 
 public class MethodPerformance {
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		int a[]= {4,5,6,8,2,1,9};
 		String []str= {"Tv","Pc","mobile","watch","ipad","Ac","laptop"};
 		Utility.getStart();
 		int leng=a.length;
 		long t1,t2,t3,t4,t5,t6,t7;
 		
-		t1=System.currentTimeMillis();
+		t1=System.nanoTime();
 		int b=Utility.binarySearch(a, 8, 0, 6);
 		System.out.println("value  found at index:"+b);
 		
-		 t2=System.currentTimeMillis();
+		 t2=System.nanoTime();
 		 System.out.println(t2-t1);
 		/*
 		 * int c= Utility.binarySearch(str, "Ac"); if(c!=-1) {
 		 * System.out.println("string is not found"); }else
 		 * System.out.println("string is found");
 		 */
-		  
+		 TimeUnit.SECONDS.sleep(5);
 		 
 		 
 		
-		t3=System.currentTimeMillis();
+		t3=System.nanoTime();
 		Utility.bubbleSort(a);
 		
-		t4=System.currentTimeMillis();
+		t4=System.nanoTime();
 		System.out.println(t4-t3);
 		
 		
