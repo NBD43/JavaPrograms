@@ -11,39 +11,43 @@
 package com.bridgelabz.functionalprograming;
 
 import com.bridgelabz.utilpackage.Utility;
-public class TicTacToeTest {
 
+public class TicTacToe
+{
+	
+	public static final int PLAYER1 = 1, COMPUTER = -1;
+	public static final int EMPTY = 0;
+	
+	public int player = PLAYER1;
+	private int[][] board = new int[3][3];
+	public boolean isEmpty = false;
+	 /*
+	  * The main function is written to test TicTacToe  class
+	  */
 	public static void main(String[] args) {
 		TicTacToe t=new TicTacToe();
 		int x=0,y=0;
 		
 		do {
-			System.out.println(t.player==t.X?"Player X turn":"Player O turn");
+			System.out.println(t.player==t.PLAYER1?"Player 1 turn":"COMPUTER 2 turn");
 			System.out.println("Enter x and y places");
 			x=Utility.getInteger();
 			y=Utility.getInteger();
 			
 			t.putSign(x, y);
 			System.out.println(t.toString());
-			System.out.println("_____________________________");
+			System.out.println("");
 			t.displayWinner();
 			
 		}while(t.isEmpty);
 		         
 
 	}
-
-}
-
-class TicTacToe
-{
-	public static final int X = 1, O = -1;
-	public static final int EMPTY = 0;
-	
-	public int player = X;
-	private int[][] board = new int[3][3];
-	public boolean isEmpty = false;
-	
+	/**
+	 * Function to put sign on matrix[2][2]
+	 * @param x:number of rows.
+	 * @param y:number of columns
+	 */
 	public void putSign(int x, int y)
 	{
 		if(x<0 || x>2 || y<0 || y>2)
@@ -57,9 +61,19 @@ class TicTacToe
 			return;
 		}
 		board[x][y] = player;
-		player = -player;
+		//if position player1 and computer
+		if(board[x][y]==board[0][0]) {
+			board[2][2]=-player;
+		}else {
+				board[y][x]= -player;
+		}
+		
 	}
-	
+	/**
+	 * Function to check is win conditions.
+	 * @param player: who are playing. 
+	 * @return win condition
+	 */
 	public boolean isWin(int player)
 	{
 		return ((board[0][0] + board[0][1] + board[0][2] == player*3) ||
@@ -72,28 +86,33 @@ class TicTacToe
 				(board[2][0] + board[1][1] + board[0][2] == player*3));
 	}
 	
+	/**
+	 * Function to display the winner of game
+	 */
 	public void displayWinner()
 	{
-		if(isWin(X))
+		if(isWin(PLAYER1))
 		{
-			System.out.println("\n X wins...!!");
+			System.out.println("\n PLAYER1 wins...!!");
 			isEmpty=false;
 		}
-		else if(isWin(O))
+		else if(isWin(COMPUTER))
 		{
-			System.out.println("\n O wins...!!");
+			System.out.println("\n COMPUTER wins...!!");
 			isEmpty=false;
 		}
 		else
 		{
 			if(!isEmpty)
 			{
-				System.out.println("its a tie");
+				System.out.println("GAME IS DROW");
 			}
 			
 		}
 	}
-	
+	/**
+	 * Function to display board and signs of players.
+	 */
 	public String toString()
 	{
 		StringBuilder s = new StringBuilder();
@@ -104,10 +123,10 @@ class TicTacToe
 			{
 				switch(board[i][j])
 				{
-				case X: 
+				case PLAYER1: 
 					s.append(" X ");
 					break;
-				case O: 
+				case COMPUTER: 
 					s.append(" O ");
 					break;
 				case EMPTY: 

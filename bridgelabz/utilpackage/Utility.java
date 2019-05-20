@@ -1,4 +1,12 @@
-package com.bridgelabz.utilpackage;
+/*******************************************************************************
+ *  Purpose: To use this Functions multiple times
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   14-05-2019
+ *
+ ******************************************************************************/
+ package com.bridgelabz.utilpackage;
 
 import java.io.PrintWriter;
 import java.util.Arrays;

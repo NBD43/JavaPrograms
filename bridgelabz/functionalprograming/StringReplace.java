@@ -15,7 +15,7 @@ import com.bridgelabz.utilpackage.Utility;
 
 public class StringReplace {
 	 /*
-	  * The main function is written to test Multidimension  class
+	  * The main function is written to test StringReplace  class
 	  */
 	 public static void main(String[] args) {
 		String s1="hello <<username>>,how are you?";
