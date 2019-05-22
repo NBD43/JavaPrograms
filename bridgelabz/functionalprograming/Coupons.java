@@ -23,7 +23,7 @@ public class Coupons {
 	    * @param n is to print n coupons
 	    */
 	public void displayCoupons(int n) {
-		int r,min=1000,max=9999;
+		int ran = 0,min=1000,max=9999;
 		boolean b=false;
 		
 		int a[] = new int[n];
@@ -42,9 +42,9 @@ public class Coupons {
 			else {
 				//inner for loop for checking coupon number
 				for(int j=i-1;j>=0;j--) {
-					r=Utility.newRandom(min,max);
+					ran=Utility.newRandom(min,max);
 					//if true then dont store coupon else store
-					if (a[i]==a[j]) {
+					if (a[i]==ran) {
 						b=false;
 					}
 					else{
@@ -54,7 +54,7 @@ public class Coupons {
 					
 					if(b=true) 
 					{
-						a[i]=Utility.newRandom(min,max);
+						a[i]=ran;
 						
 					}
 				
