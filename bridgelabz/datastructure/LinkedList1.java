@@ -10,11 +10,11 @@
  ******************************************************************************/
 package com.bridgelabz.datastructure;
 
-public class LinkedList {
-	Node head;
-	public void insert(int data) {
-		Node node=new Node();
-		node.data=data;
+public class LinkedList1<T> {
+	Node<T> head;
+	public void insert(T data) {
+		Node<T> node=new Node();
+		node.data= data;
 		node.next=null;
 		
 		if(head==null) {
@@ -40,7 +40,7 @@ public class LinkedList {
 		System.out.println(node.data);
 	}
 	
-	public void insertAtStart(int data) {
+	public void insertAtStart(T data) {
 		Node node=new Node();
 		node.data=data;
 		node.next=null;
@@ -48,7 +48,7 @@ public class LinkedList {
 		head=node;
 	}
 	
-	public void insertAt(int index,int data) {
+	public void insertAt(int index,T data) {
 		Node node=new Node();
 		node.data=data;
 		node.next=null;

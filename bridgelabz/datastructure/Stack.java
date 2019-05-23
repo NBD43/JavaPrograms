@@ -8,7 +8,7 @@
  ******************************************************************************/
 package com.bridgelabz.datastructure;
 
-public class Stack {
+public class Stack <T>{
 	int capacity=2;
 	int stack[]=new int[5];
 	int top=0;
