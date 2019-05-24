@@ -10,10 +10,11 @@
  ******************************************************************************/
 package com.bridgelabz.datastructure;
 
-public class LinkedList1<T> {
+public class LinkedList<T> {
 	Node<T> head;
+	int length=0;
 	public void insert(T data) {
-		Node<T> node=new Node();
+		Node<T> node=new Node<T>();
 		node.data= data;
 		node.next=null;
 		
@@ -21,7 +22,7 @@ public class LinkedList1<T> {
 			head=node;
 		}
 		else {
-			Node n=head;
+			Node<T> n=head;
 			while(n.next!=null) {
 				n=n.next;
 			}
@@ -31,17 +32,17 @@ public class LinkedList1<T> {
 	}
 	
 	public void show() {
-		Node node=head;
+		Node<T> node=head;
 		while(node.next!=null)
 		{
-			System.out.println(node.data);
+			System.out.print(node.data+" ");
 			node=node.next;
 		}
-		System.out.println(node.data);
+		System.out.print(node.data);
 	}
 	
 	public void insertAtStart(T data) {
-		Node node=new Node();
+		Node<T> node=new Node<T>();
 		node.data=data;
 		node.next=null;
 		node.next=head;
@@ -49,10 +50,10 @@ public class LinkedList1<T> {
 	}
 	
 	public void insertAt(int index,T data) {
-		Node node=new Node();
+		Node<T> node=new Node<T>();
 		node.data=data;
 		node.next=null;
-		Node n=head;
+		Node<T> n=head;
 		if(index==0) {
 			insertAtStart(data);
 		}else {
@@ -72,8 +73,8 @@ public class LinkedList1<T> {
 			head=head.next;
 		}
 		else {
-			Node n=head;
-			Node n1=null;
+			Node<T> n=head;
+			Node<T> n1=null;
 			for(int i=0;i<index-1;i++) {
 				n=n.next;
 			}
@@ -84,6 +85,40 @@ public class LinkedList1<T> {
 		
 			
 		}
+		
+	}
+	public boolean searchIt(T data) {
+		Node<T> temp=head;
+		if(head.data.equals(data)) {
+			return true;
+		}
+		while(temp.next!=null) {
+			temp=temp.next;
+			if(temp.data.equals(data)) {
+				return true;
+			}
+		}
+		return false;
+		
+	}
+	
+	public void delete(T data) {
+		Node<T> temp=head;
+		Node<T> prev=temp;
+		if(temp.data.equals(data)) {
+			head=temp.next;
+			length--;
+			return;
+		}
+		while (temp.next != null) {
+			prev = temp; // get previous of deleting node
+			temp = temp.next;
+			if (temp.data.equals(data)) {
+				prev.next = temp.next; // change reference of previous node with next of deleting node
+				length--;
+			}
+		}
+
 	}
 
 }
