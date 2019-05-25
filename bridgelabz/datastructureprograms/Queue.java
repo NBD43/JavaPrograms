@@ -1,4 +1,4 @@
-package com.bridgelabz.datastructure;
+package com.bridgelabz.datastructureprograms;
 
 public class Queue<T> {
 	Node<T> head;

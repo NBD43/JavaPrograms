@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To search word from orderlist and delete it else add it..
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   24-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
 import java.io.BufferedReader;
