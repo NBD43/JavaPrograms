@@ -79,4 +79,10 @@ public class Queue<T> {
 		return (T) head.data;
 		
 	}
+	public boolean isEmpty() {
+		if(head==null)
+			return true;
+			else 
+			return false;
+	}
 }

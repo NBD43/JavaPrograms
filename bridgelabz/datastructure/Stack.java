@@ -24,7 +24,7 @@ public class Stack <T>{
 	};
 	
 	public void push(T data) {
-		Node n=new Node(data);
+		Node<T> n=new Node<>(data);
 		Node t=head;
 		if(head==null) {
 			head=n;
@@ -43,11 +43,11 @@ public class Stack <T>{
 		
 	}
 	
-	public char pop() {
-		Node current=head;
+	public T pop() {
+		Node<T> current=head;
 		head=current.next;
 		top--;
-		return  (char) current.data;
+		return  (T) current.data;
 		
 	}
 	
