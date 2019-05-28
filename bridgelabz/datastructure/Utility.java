@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To from reusable functions.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   27-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructure;
 
 import java.util.Arrays;

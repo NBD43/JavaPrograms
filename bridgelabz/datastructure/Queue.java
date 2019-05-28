@@ -1,4 +1,13 @@
-package com.bridgelabz.datastructure;
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: Functions or Operations Of Queue.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   25-05-2019
+ *
+ ******************************************************************************/package com.bridgelabz.datastructure;
 
 public class Queue<T> {
 	Node<T> head;

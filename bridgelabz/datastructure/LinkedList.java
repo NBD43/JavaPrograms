@@ -38,7 +38,7 @@ public class LinkedList<T> {
 			System.out.print(node.data+" ");
 			node=node.next;
 		}
-		System.out.print(node.data);
+		System.out.print(node.data+" ");
 	}
 	
 	public void insertAtStart(T data) {

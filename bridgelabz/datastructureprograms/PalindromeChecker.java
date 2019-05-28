@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To check string is palindrome or not.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   24-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
 import java.util.Scanner;

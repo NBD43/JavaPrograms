@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To stored primeAnagram numbers 1-1000 in 2D Array using Stack.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   28-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
 import com.bridgelabz.datastructure.Stack;

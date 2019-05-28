@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To stored primeAnagram numbers 1-1000 in 2D Array using Queue .
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   27-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
 import com.bridgelabz.datastructure.Utility;
