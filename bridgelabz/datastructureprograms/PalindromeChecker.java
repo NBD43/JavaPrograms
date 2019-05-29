@@ -16,7 +16,9 @@ import com.bridgelabz.datastructure.Dequeue;
 import com.bridgelabz.datastructure.DequeueFunction;
 
 public class PalindromeChecker {
-
+	/*
+	 * The main function is written to test PalindromeChecker class
+	 */
 	public static void main(String[] args) {
 		Scanner scn= new Scanner(System.in);
 		System.out.println("Enter the String");

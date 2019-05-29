@@ -13,7 +13,10 @@ package com.bridgelabz.datastructureprograms;
 import java.util.Scanner;
 
 public class BankCounterTest {
-
+	
+	/*
+	 * The main function is written to test Coupons class
+	 */
 	public static void main(String[] args) {
 		
 		BankCounter b1=new BankCounter();

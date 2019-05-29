@@ -13,6 +13,9 @@ package com.bridgelabz.datastructureprograms;
 import com.bridgelabz.datastructure.Utility;
 
 public class PrimeAnagram {
+	/*
+	 * The main function is written to test PrimeAnagram class
+	 */
 	public static void main(String []args) {
 		System.out.println("to stored the prime anagram in 2d Array");
 		int[][] arr=new int[13][13];
@@ -31,7 +34,7 @@ public class PrimeAnagram {
 			if(f==1)
 				break;
 		}
-		
+		//to display 2d Array.
 		for(int i=0;i<arr.length;i++) {
 			for(int j=0;j<arr.length;j++) {
 				if(arr[i][j]!=0)

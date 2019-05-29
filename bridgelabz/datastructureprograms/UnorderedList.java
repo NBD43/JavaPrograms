@@ -17,7 +17,9 @@ import java.util.Scanner;
 import com.bridgelabz.datastructure.*;
 
 public class UnorderedList {
-	
+	/*
+	 * The main function is written to test UnorderedList class
+	 */
 	public static void main(String[] args) throws IOException {	
 		//object of linked list
 		LinkedList<String> l1=new LinkedList<String>();

@@ -10,10 +10,8 @@
  ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
-
-
 public class BankCounter {
-
+	//Inner class
 	class Node{
 		int data;
 		Node next;

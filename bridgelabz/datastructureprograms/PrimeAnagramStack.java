@@ -14,7 +14,9 @@ import com.bridgelabz.datastructure.Stack;
 import com.bridgelabz.datastructure.Utility;
 
 public class PrimeAnagramStack {
-
+	/*
+	 * The main function is written to test PrimeAnagramStack class
+	 */
 	public static void main(String[] args) {
 		System.out.println("printing PRIME+ ANAGRAM+ BY USING STACK");
 		int range=1000;

@@ -13,9 +13,13 @@ package com.bridgelabz.datastructureprograms;
 import java.util.Scanner;
 
 public class Calendar {
+	//Initilization of 2d array for month
 	static int[][] arr = new int[6][7];
+	//Initalized months having days.
 	static int[] month = {31,29,31,30,31,30,31,30,31,30,31,30};
-
+	/*
+	 * The main function is written to test Calender class
+	 */
 	public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
 		System.out.println("Enter the month:");
@@ -24,7 +28,11 @@ public class Calendar {
 		int year=scn.nextInt();
 		displayCalender(mon,year);
 	}
-
+	/**
+	 * Function to display the Calender Month
+	 * @param mon: month which entered
+	 * @param year:year which entered
+	 */
 	public static void displayCalender(int mon, int year) {
 		int day=dayOfWeek(mon,year);
 		System.out.println("dis"+day);
@@ -33,7 +41,10 @@ public class Calendar {
 		displayMonth(mon);
 		
 	}
-
+	/**
+	 * Function to display dates in 2d array 
+	 * @param mon:month
+	 */
 	private static void displayMonth(int mon) {
 		System.out.println("	sun  	mon  	tue  	wed  	thu   	fri  	sat");
 		for(int i=0;i<arr.length;i++) {
@@ -48,7 +59,10 @@ public class Calendar {
 		}
 		
 	}
-
+	/**
+	 * Function put calender in 2d array. 
+	 * @param day
+	 */
 	private static void putCalender(int day) {
 		int d1=1;
 		for(int i=day;i<arr[0].length;i++) {
@@ -63,7 +77,9 @@ public class Calendar {
 		}
 		
 	}
-
+	/**
+	 * function to initial the 2d Array.
+	 */
 	private static void initial() {
 		for(int i=0;i<arr.length;i++) {
 			for(int j=0;j<arr[i].length;j++) {
@@ -72,7 +88,12 @@ public class Calendar {
 		}
 		
 	}
-
+	/**
+	 * Function to return starting day of month
+	 * @param mon: month of date.
+	 * @param year:year of date.
+	 * @return
+	 */
 	public static int dayOfWeek(int mon, int year) {
 		int day=1,y0,x,m0,d0;
 		y0=year-(14-mon)/12;

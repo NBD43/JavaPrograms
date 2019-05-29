@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To do the operation using Queue.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   28-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.datastructureprograms;
 
 public class Queue<T> {

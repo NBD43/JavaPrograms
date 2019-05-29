@@ -13,7 +13,9 @@ import java.util.Scanner;
 import com.bridgelabz.datastructure.*;
 
 public class StackCalender {
-
+	/*
+	 * The main function is written to test StackCalender class
+	 */
 	public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
 		System.out.println("Enter the Month:");
@@ -23,6 +25,11 @@ public class StackCalender {
 		calendarDisplay(mon,year);
 
 	}
+	/**
+	 * Function to display the calender using stack
+	 * @param month: month of date.
+	 * @param year : year of date.
+	 */
 	private static void calendarDisplay(int month, int year) {
 		String months[]= { "January", "Februry", "March", "April", "May", "June", "July", "August", "September", "October",
 				"November", "December" };
@@ -67,6 +74,12 @@ public class StackCalender {
 		
 		
 	}
+	/**
+	 * Function to return starting day of month
+	 * @param mon: month of date.
+	 * @param year:year of date.
+	 * @return
+	 */
 	public static int dayOfWeek(int mon, int year) {
 		int day=1,y0,x,m0,d0;
 		y0=year-(14-mon)/12;
@@ -75,6 +88,11 @@ public class StackCalender {
 		d0=(day+x+31*m0/12)%7;
 		return d0;
 	}
+	/**
+	 * Function to check year is leap or not
+	 * @param year: year of date
+	 * @return true or false
+	 */
 	private static boolean isLeapYear(int year) 
 	{
 		 if  ((year % 4 == 0) && (year % 100 != 0)) return true;

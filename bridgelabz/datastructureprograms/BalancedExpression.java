@@ -15,18 +15,19 @@ import java.util.Scanner;
 import com.bridgelabz.datastructure.Stack;
 
 public class BalancedExpression {
-	
+	/*
+	 * The main function is written to test Coupons class
+	 */
 	public static void main(String[] args){
 		Scanner scn=new Scanner(System.in);
 		Stack<Character> st = new Stack<Character>();
-		int opening=0,closing=0,third=0;
 		System.out.println("Enter the Expression:");
 		String str=scn.nextLine();
 		
 		
 		for(int i=0;i<str.length();i++) {
 			char current=str.charAt(i);
-			//char =st.peek();
+			
 			if(current=='{' || current=='('||current=='[') {
 				st.push(current);
 			}
@@ -41,8 +42,8 @@ public class BalancedExpression {
 				st.pop();
 			}else break;
 		}
-		 int count=closing+opening+third;
-		if(st.isEmpty()==true && count==0) {
+		 
+		if(st.isEmpty()==true ) {
 			System.out.println("Balanced");
 		}else 
 			System.out.println("Unbalanced");

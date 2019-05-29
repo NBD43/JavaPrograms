@@ -13,10 +13,13 @@ package com.bridgelabz.datastructureprograms;
 public class Prime2dArray
 {
 	static int[][] primeArray = new int[10][26];
-	
+	/**
+	 * Function to check the number is prime or not.
+	 * @param no: number.
+	 * @return flag 0 or 1.
+	 */
 	public static int Prime(int no )
-	{	
-	
+	{
 			int flag = 0;
 		
 					for(int i = 2 ; i< no/2 ; i++)
@@ -32,7 +35,10 @@ public class Prime2dArray
 		
 		return flag;
 	}
-	
+	/**
+	 * Function to display the prime number.
+	 * @return array with prime number.
+	 */
 	public static int[][] display()
 	{
 		int first = 0, second = 0 , third = 0 , fourth = 0, fifth = 0, sixth = 0, seventh = 0,eighth = 0 , nineth = 0, tenth = 0;
@@ -98,7 +104,9 @@ public class Prime2dArray
 		return primeArray;
 		
 	}
-	
+	/*
+	 * The main function is written to test Prime2dArray class
+	 */
 	public static void main(String[] args)
 	{
 		System.out.println("Prime 2D array");

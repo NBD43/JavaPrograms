@@ -13,7 +13,9 @@ package com.bridgelabz.datastructureprograms;
 import com.bridgelabz.datastructure.Utility;
 
 public class PrimeAnagramQueue {
-
+	/*
+	 * The main function is written to test PrimeAnagramQueue class
+	 */
 	public static void main(String[] args) {
 		System.out.println("printing PRIME+ ANAGRAM+ BY USING QUEUE");
 		Queue<Integer> q1=new Queue<Integer>();
