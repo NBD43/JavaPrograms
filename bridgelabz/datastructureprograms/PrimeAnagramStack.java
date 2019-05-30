@@ -22,10 +22,10 @@ public class PrimeAnagramStack {
 		int range=1000;
 		int []arr=Utility.primeAnagram(range);
 		Stack<Integer> st=new Stack<Integer>();
-		for(int i=0;i<arr.length;i++) {
+		for(int i=arr.length-1;i>=0;i--) {
 			st.push(arr[i]);
 		}
-		st.display();
+		
 		System.out.println("Reverse PRIME+ANAGRAM :");
 		while(st.isEmpty()!=true) {
 			System.out.print(st.pop()+"  ");

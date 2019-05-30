@@ -16,7 +16,7 @@ public class Calendar {
 	//Initilization of 2d array for month
 	static int[][] arr = new int[6][7];
 	//Initalized months having days.
-	static int[] month = {31,29,31,30,31,30,31,30,31,30,31,30};
+	static int[] month = {31,29,31,30,31,30,31,31,30,31,30,31};
 	/*
 	 * The main function is written to test Calender class
 	 */

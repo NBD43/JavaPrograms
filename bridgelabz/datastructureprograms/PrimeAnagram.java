@@ -21,7 +21,7 @@ public class PrimeAnagram {
 		int[][] arr=new int[13][13];
 		int primeAnagram[]=Utility.primeAnagram(1000);
 		int k=0, f=0;
-		System.out.println(arr.length);
+		//System.out.println(arr.length);
 		for(int i=0;i<arr.length;i++) {
 			for(int j=0;j<arr.length;j++) {
 				arr[i][j]=primeAnagram[k];
