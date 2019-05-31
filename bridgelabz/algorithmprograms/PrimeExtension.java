@@ -65,6 +65,8 @@ public class PrimeExtension {
 	
 		System.out.println("prime no:");
 		System.out.println(prino);
+		System.out.println("prime with Anagram");
+		System.out.println(angno);
 		System.out.println("prime with Anagram and palaindrome");
 		System.out.println(palno);
 

@@ -12,10 +12,13 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Utility {
 	public static Scanner sc=new Scanner(System.in);
 	public static long start;
+	public static Pattern pattern = null;
 
 	
 
@@ -32,7 +35,7 @@ public class Utility {
 	
 		//to get String as a input from scanner 
 		public static String getString() {
-			return sc.next();	
+			return (sc.nextLine());	
 		}
 		
 	
@@ -421,7 +424,41 @@ public class Utility {
 		}
 
 		
+	//==================================OOPS==========================================//
 		
+		//for validating username
+		public static boolean validateName(String txt) {
+
+			String regx = "[a-zA-Z]+\\.?";
+			pattern = Pattern.compile(regx, Pattern.CASE_INSENSITIVE);
+			Matcher matcher = pattern.matcher(txt);
+			return matcher.find();
+
+		}
+	//for validating mobile NUmber
+		public static boolean validatemobileNumber(String mobileNo) {
+			String regex = "^[0-9]{10}$";
+			pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+			Matcher matcher = pattern.matcher((mobileNo));
+			return matcher.find();
+
+		}
+	//for validating Full Name
+		public static boolean validateFullName(String fullName) {
+			String regex = "^([a-zA-Z]{2,}\\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)";
+			pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+			Matcher matcher = pattern.matcher(fullName);
+			return matcher.find();
+
+		}
+	//for validating date
+		public static boolean validateDate(String Date) {
+			String regex = "\\d{2}/\\d{2}/\\d{4}";
+			pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+			Matcher matcher = pattern.matcher(Date);
+			return matcher.find();
+
+		}
 		
 
 
