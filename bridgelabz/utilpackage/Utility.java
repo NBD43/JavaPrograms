@@ -35,7 +35,7 @@ public class Utility {
 	
 		//to get String as a input from scanner 
 		public static String getString() {
-			return (sc.nextLine());	
+			return (sc.next());	
 		}
 		
 	
@@ -43,6 +43,25 @@ public class Utility {
 		public static boolean getBoolean() {
 			return sc.nextBoolean();
 			
+		}
+		public static String inputString(String string) {
+			System.out.println(string);
+			return (sc.nextLine());
+		}
+
+		public static int inputInteger(String string) {
+			System.out.println(string);
+			return (Integer.parseInt(sc.nextLine()));
+		}
+
+		public static long inputLong(String string) {
+			System.out.println(string);
+			return (Long.parseLong(sc.nextLine()));
+		}
+
+		public static double inputDouble(String string) {
+			System.out.println(string);
+			return (Double.parseDouble(sc.nextLine()));
 		}
 		//to display array on console using printWriter
 		public static void toPrintArray(int a[][],int m,int n) {

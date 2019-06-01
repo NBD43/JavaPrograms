@@ -34,8 +34,8 @@ public class InventoryManagement {
 				{
 					//System.out.println(""+node);
 					String name=node.path("name").asText();
-					int price=node.path("price").asInt();
 					int weight=node.path("weight").asInt();
+					int price=node.path("price").asInt();
 					
 					System.out.println("Name:"+name+"\nPrice: "+price+"\nWeight: "+weight);
 					System.out.println("total: "+price*weight+" Rs"+"\n");
