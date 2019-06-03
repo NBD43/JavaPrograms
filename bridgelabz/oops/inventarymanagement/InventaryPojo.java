@@ -38,7 +38,7 @@ public class InventaryPojo {
 			while (jParser.nextToken() != JsonToken.END_OBJECT) {
 				System.out.print(jParser.getText());
 			}
-			System.out.println("]}");
+//			System.out.println("]}");
 		} catch (Exception e) {
 				e.printStackTrace();
 		}

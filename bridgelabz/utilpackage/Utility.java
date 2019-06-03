@@ -26,6 +26,10 @@ public class Utility {
 		public static int getInteger() {
 			return sc.nextInt();
 		}
+		//to get integer as a input from scanner 
+		public static long getLong() {
+			return sc.nextLong();
+		}
 		
 		//to get double as a input from scanner 
 		public static double getDouble() {

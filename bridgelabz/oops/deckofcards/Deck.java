@@ -41,9 +41,9 @@ public class Deck {
 	}
 
 	public void dealCard(Player player) {
-		// Get next card and add to hand of the player
-		Card removedCard = cardDeck.remove(0);
-		player.getHand().add(removedCard);
+//		// Get next card and add to hand of the player
+//		Card removedCard = cardDeck.remove(0);
+//		player.getHand().add(removedCard);
 	}
 
 	public Card dealCard() {

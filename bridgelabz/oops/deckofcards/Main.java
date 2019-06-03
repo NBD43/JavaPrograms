@@ -7,13 +7,14 @@ public class Main {
 		System.out.println("Size of deck is: " + deck.getSizeOfDeck());
 
 		//Iterator<Deck> iteratorDeck=deck.iterator();
-		System.out.println("Deck after shuffling is " + deck);
+		System.out.println("player1 Deck after shuffling is " + deck);
 		deck.shuffle();
-		System.out.println("Deck after shuffling is " + deck);
+		System.out.println("player2 Deck after shuffling is " + deck);
 		deck.shuffle();
-		System.out.println("Deck after shuffling is " + deck);
+		System.out.println("player3 Deck after shuffling is " + deck);
 		deck.shuffle();
-		System.out.println("Deck after shuffling is " + deck);
+		System.out.println("player4 Deck after shuffling is " + deck);
+		
 
 	}
 }
