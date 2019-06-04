@@ -37,10 +37,12 @@ public class AddressBookFunction {
 				throws JsonMappingException, IOException {
 
 			if (new File(Path + addressBook)
-					.exists() == false) {
+					.exists() != false) {
 				System.out.println("invalid address book");
-				return;
-			}
+				//return;
+			}else {
+				
+			
 
 			PersonDetails person = new PersonDetails();
 			Address address = new Address();
@@ -66,7 +68,8 @@ public class AddressBookFunction {
 			person.setPhoneNumber(phone);
 			AddressBookFunction manager = new AddressBookFunction();
 			manager.save1(person, addressBook);
-		}
+			}
+			}
 
 		// to edit person details
 		public static void editPerson(String name, String addressBook) throws JsonMappingException, IOException {

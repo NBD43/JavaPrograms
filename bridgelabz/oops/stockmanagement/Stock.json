@@ -1,11 +1,17 @@
 [ {
-  "name" : "dfhhf",
-  "numberOfShares" : 67,
-  "price" : 45677.0,
-  "symbol" : "DFH"
+  "name" : "tetr",
+  "weight" : 3,
+  "price" : 25.0
 }, {
-  "name" : "hghsf",
-  "numberOfShares" : 56,
-  "price" : 6773.0,
-  "symbol" : "HGH"
+  "name" : "fdhf",
+  "weight" : 4,
+  "price" : 12.0
+}, {
+  "name" : "gfsgey",
+  "weight" : 6,
+  "price" : 32.0
+}, {
+  "name" : "gfyeg",
+  "weight" : 6,
+  "price" : 10.0
 } ]
