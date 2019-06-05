@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To perform StockManagements operations .
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   01-06-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.oops.stockmanagement;
 
 import java.io.File;

@@ -1,4 +1,13 @@
-package com.bridgelabz.oops.commercialdataprocessing;
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To perform CommercialDataProcessing using stack.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   01-06-2019
+ *
+ ******************************************************************************/package com.bridgelabz.oops.commercialdataprocessing;
 
 
 import com.bridgelabz.datastructure.Stack;
@@ -12,9 +21,7 @@ import java.util.StringJoiner;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
-//import java.util.Stack;
 
-//import com.bridgelabz.oops.ComPojo;
 
 public class StoreSymbolPurchasedInStack {
 	public static void main(String args[]) throws JsonMappingException, IOException {

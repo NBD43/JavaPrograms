@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To create and  Inventary and stored in json .
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   31-05-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.oops.inventarymanagement;
 
 import java.io.File;

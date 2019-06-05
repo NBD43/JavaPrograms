@@ -1,3 +1,13 @@
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To perform ClinicManagement operations.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   03-06-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.oops.cliniquemanagement;
 
 import java.util.Date;

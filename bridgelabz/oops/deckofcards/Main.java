@@ -1,4 +1,13 @@
-package com.bridgelabz.oops.deckofcards;
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: To perform Deck of Cards after suffling cards.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   02-06-2019
+ *
+ ******************************************************************************/package com.bridgelabz.oops.deckofcards;
 
 public class Main {
 	public static void main(String args[]) {

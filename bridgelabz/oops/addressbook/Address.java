@@ -1,4 +1,13 @@
-package com.bridgelabz.oops.addressbook;
+/******************************************************************************
+ * 
+ *  
+ *  Purpose: PoJO of Address.
+ *
+ *  @author  Nilesh Dahiphale
+ *  @version 1.0
+ *  @since   03-06-2019
+ *
+ ******************************************************************************/package com.bridgelabz.oops.addressbook;
 
 public class Address {
 	private String street;

@@ -1,7 +1,5 @@
 package com.bridgelabz.oops.commercialdataprocessing;
-/****************************************
- * POJO Class for Company stock Account
- ****************************************/
+
 
 public class CommercialPOJO {
 	private String companyName;
