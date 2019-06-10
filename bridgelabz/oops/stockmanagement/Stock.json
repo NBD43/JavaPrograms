@@ -1,17 +1,9 @@
 [ {
-  "name" : "tetr",
-  "weight" : 3,
-  "price" : 25.0
+  "name" : "roice",
+  "weight" : 1,
+  "price" : 40.0
 }, {
-  "name" : "fdhf",
-  "weight" : 4,
-  "price" : 12.0
-}, {
-  "name" : "gfsgey",
-  "weight" : 6,
-  "price" : 32.0
-}, {
-  "name" : "gfyeg",
-  "weight" : 6,
-  "price" : 10.0
+  "name" : "wheat",
+  "weight" : 5,
+  "price" : 40.0
 } ]
