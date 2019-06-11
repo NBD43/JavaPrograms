@@ -3,13 +3,6 @@ package com.bridgelabz.oops;
 import java.io.File;
 
 
-/*********************************************************************
- * @author  :Laxman Bhosale
-
- * @purpose :Program for creating inventory managent system which contains
- *           wheats,rice,pulses as inventory  with price as per weight 
- *           Price of total inventory is calculated 
- **************************************************************************/
 
 import java.io.IOException;
 

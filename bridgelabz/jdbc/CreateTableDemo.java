@@ -8,7 +8,7 @@ public class CreateTableDemo {
 
 	public static void main(String[] args) throws Exception {
 		try {
-		String sqlQuery="create table Student(rollno int(5) primary key,name varchar(20),Address varchar(20),MobileNo int(10))";
+		String sqlQuery="create table Student1(rollno int(5) primary key,name varchar(20),Address varchar(20),MobileNo int(10))";
 		//load and register the driver class
 		Class.forName("com.mysql.jdbc.Driver");
 		//Establish the connection between the java Application and Database
